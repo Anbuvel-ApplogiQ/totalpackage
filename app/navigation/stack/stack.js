@@ -11,17 +11,18 @@ import Permission from '../../screen/packagescreen/permission';
 import Reacti18next from '../../screen/packagescreen/reacti18next';
 import Maps from '../../screen/packagescreen/maps';
 import Fastimage from '../../screen/packagescreen/fastimage';
-import Swiper from '../../screen/packagescreen/swiper';
+
 import Victoryname from '../../screen/packagescreen/victoryname';
 import Htmltopdf from '../../screen/packagescreen/htmltopdf';
-import Signature from '../../screen/packagescreen/signature';
-import I18next from '../../screen/packagescreen/i18next';
 import Shopify from '../../screen/packagescreen/shopify';
 import Calendras from '../../screen/packagescreen/calendras';
 import Documentpicker from '../../screen/packagescreen/documentpicker';
 import Chartkit from '../../screen/packagescreen/chartkit';
 
 import Videoscr from '../../screen/packagescreen/video';
+import Signaturescr from '../../screen/packagescreen/signature';
+import Swiperscr from '../../screen/packagescreen/swiper';
+import I18nextscr from '../../screen/packagescreen/i18next';
 
 const Stacknavigation = () => {
     const Stack = createNativeStackNavigator();
@@ -40,12 +41,12 @@ const Stacknavigation = () => {
       <Stack.Screen name ="calendras" component={Calendras} options={{headerShown:false}}/>
       <Stack.Screen name ="Reacti18next" component={Reacti18next} options={{headerShown:false}}/>
       <Stack.Screen name ="Fastimage" component={Fastimage} options={{headerShown:false}}/>
-      <Stack.Screen name ="Swiper" component={Swiper} options={{headerShown:false}}/>
+      <Stack.Screen name ="Swiper" component={Swiperscr} options={{headerShown:false}}/>
       <Stack.Screen name ="Victoryname" component={Victoryname} options={{headerShown:false}}/>
       <Stack.Screen name ="Maps" component={Maps} options={{headerShown:false}}/>
       <Stack.Screen name ="Htmltopdf" component={Htmltopdf} options={{headerShown:false}}/>
-      <Stack.Screen name ="Signature" component={Signature} options={{headerShown:false}}/>
-      <Stack.Screen name ="I18next" component={I18next} options={{headerShown:false}}/>
+      <Stack.Screen name ="Signature" component={Signaturescr} options={{headerShown:false}}/>
+      <Stack.Screen name ="I18next" component={I18nextscr} options={{headerShown:false}}/>
       <Stack.Screen name ="Shopify" component={Shopify} options={{headerShown:false}}/>
     </Stack.Navigator>
   )

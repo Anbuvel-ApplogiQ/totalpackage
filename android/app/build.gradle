@@ -109,6 +109,8 @@ dependencies {
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:flipper-integration")
     implementation project(':react-native-vector-icons')
+    // implementation "com.horcrux.svg:react-native-svg:14.1.0"
+
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
